@@ -63,8 +63,8 @@ body {
   width: var(--width);
   display: flex;
   place-items: center;
+  place-content: end;
   flex-direction: column;
-  justify-content: end;
   bottom: 20px;
   z-index: 0;
 }

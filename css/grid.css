@@ -54,7 +54,7 @@ body {
   width: var(--width);
 }
 .text {
-  background-color:aliceblue;
+  background-color: aliceblue;
   position: absolute;
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
@@ -63,7 +63,7 @@ body {
   width: var(--width);
   display: flex;
   place-items: center;
-  place-content: end;
+  place-content:end;
   flex-direction: column;
   bottom: 20px;
   z-index: 0;
@@ -78,7 +78,7 @@ body {
   padding: 10px 15px;
   transition: all 0.3s ease;
 }
-.text a button:hover{
+.text a button:hover {
   background-color: lightcoral;
   transition: all 0.3s ease;
 }
@@ -86,7 +86,9 @@ body {
   font-weight: bolder;
 }
 
-.text a,
+.text a{
+  margin-bottom: 5px;
+}
 .text p {
   margin-bottom: 5px;
 }

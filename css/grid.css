@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Nunito:wght@300;400;700&family=Supermercado+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+}
+:root {
+  --hight: 150px;
+  --width: 150px;
+}
+body {
+  background-color: floralwhite;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 180px);
+  gap: 10px;
+  place-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.header {
+  width: 80%;
+  border: 2px solid black;
+  border-left: none;
+  border-right: none;
+  height: 100px;
+  margin: 30px auto;
+  display: flex;
+  place-content: center;
+  place-items: center;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: white;
+  position: relative;
+}
+.image {
+  position: absolute;
+  height: var(--hight);
+  top: 50px;
+  z-index: 1;
+}
+.image img {
+  border-radius: 1rem;
+  height: var(--hight);
+  width: var(--width);
+}
+.text {
+  background-color:aliceblue;
+  position: absolute;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  width: var(--width);
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  justify-content: end;
+  bottom: 20px;
+  z-index: 0;
+}
+
+.text a button {
+  font-weight: bolder;
+  background-color: lightgreen;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+.text a button:hover{
+  background-color: lightcoral;
+  transition: all 0.3s ease;
+}
+.text p {
+  font-weight: bolder;
+}
+
+.text a,
+.text p {
+  margin-bottom: 5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  border-top: 2px solid black;
+  width: 100%;
+  height: 50px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  place-items: center;
+  background-color: floralwhite;
+  z-index: 1;
+}
+
+footer p {
+  font-size: 20px;
+}
+footer p span {
+  font-weight: bolder;
+  color: crimson;
+}
